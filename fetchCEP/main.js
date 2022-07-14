@@ -14,16 +14,21 @@ btnPesquisar.addEventListener("click", async (event) => {
     event.preventDefault();
     const inputDoCep = document.getElementById("cep");
     const valorDoCep = inputDoCep.value;
-    const url = `https://viacep.com.br/ws/${valorDoCep}/json/`;
-
-    const resultado = await fetch(url);
-    const data = await resultado.json();
-    console.log(data);
-    if(data.erro) {
+    if(valorDoCep.length < 8) {
         mostrarCepInvalido();
     } else {
-        atribuirCampos(data);
+        const url = `https://viacep.com.br/ws/${valorDoCep}/json/`;
+
+        const resultado = await fetch(url);
+        const data = await resultado.json();
+        console.log(data);
+        if(data.erro) {
+            mostrarCepInvalido();
+        } else {
+            atribuirCampos(data);
+        }
     }
+    
 });
 
 
