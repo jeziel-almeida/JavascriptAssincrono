@@ -1,0 +1,74 @@
+body {
+    font-family: 'Segoe UI'
+}
+
+header {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-image: url(./background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.titulo {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.fazer-pesquisa {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: rgb(238, 235, 235);
+}
+
+.fazer-pesquisa__div label {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.fazer-pesquisa__div input {
+    padding: .5rem .8rem;
+    font-size: 1.2rem;
+}
+
+#botao-pesquisar {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-left: 1.3rem;
+    height: 45px;
+}
+
+.fazer-pesquisa__div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-usuario {
+    padding: 2rem 1rem;
+    display: flex;
+}
+
+.info-usuario__pessoal, .info-usuario__outros {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.info-usuario__pessoal p {
+    margin: 0;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.info-usuario__imagem {
+    width: 200px;
+}
